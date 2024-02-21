@@ -14,22 +14,13 @@ from sklearn.metrics import classification_report
 # Define the Streamlit app
 def app():
     
-    st.title('Symbol Classification')
-    st.subheader('by Louie F. Cervantes M.Eng., WVSU College of ICT')
+    st.title('Arrow Symbol Classification')
+    st.subheader('by Matthew Ariel A. Enarle BSCS 3-B AI')
     st.write('The naive bayes classifierperforms well on overlapped data.')
 
     st.write('Dataset description:')
 
     st.write('Number of features: 64')
-    text = """Feature representation: Binary values (1 or 0) representing the 8x8 pixels of an image.
-        Target variable: This could be a single categorical variable representing the class of the image (e.g., digit recognition, traffic sign classification).
-        Potential Applications:"""
-    st.write(text)
-    st.write('Digit recognition: Identifying handwritten digits from 0-9.')
-    st.write('Traffic sign classification: Classifying different types of traffic signs.')
-    st.write('Character recognition: Recognizing characters from different alphabets.')
-    st.write("""Simple image classification: Classifying simple images into categories 
-             like animal/non-animal, vehicle/non-vehicle, etc.""")
 
     # display choice of classifier
     clf = BernoulliNB() 
@@ -43,7 +34,7 @@ def app():
         clf = BernoulliNB()
 
     if st.button('Start'):
-        df = pd.read_csv('smiley_faces.csv', header=None)
+        df = pd.read_csv('arrowsymbols.csv', header=None)
         # st.dataframe(df, use_container_width=True)  
         
         # display the dataset
