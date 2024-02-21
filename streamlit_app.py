@@ -16,7 +16,7 @@ def app():
     
     st.title('Arrow Symbol Classification')
     st.subheader('by Matthew Ariel A. Enarle BSCS 3-B AI')
-    st.write('The naive bayes classifierperforms well on overlapped data.')
+    st.write('The naive bayes classifier performs well on overlapped data.')
 
     st.write('Dataset description:')
 
