@@ -20,10 +20,7 @@ def app():
 
     st.write('Dataset description:')
     st.write('To automatically recognize and categorize an image as containing an arrow symbol.')
-    st.write(' This symbol describes a system that automatically recognizes arrow symbols in images. 
-        It uses machine learning techniques to analyze image features like line orientation and endpoint shape, 
-        and then categorize the image as containing an arrow or not.
-        This technology has applications in areas like traffic sign recognition and document analysis.')
+    st.write(' This symbol describes a system that automatically recognizes arrow symbols in images. It uses machine learning techniques to analyze image features like line orientation and endpoint shape, and then categorize the image as containing an arrow or not. This technology has applications in areas like traffic sign recognition and document analysis.')
     
 
     st.write('Number of features: 64')
